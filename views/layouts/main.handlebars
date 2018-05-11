@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Eat Burger!</title>
+    
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" >
+    <link rel="stylesheet" href="/assets/css/burger_style.css">
+  </head>
+  <body>
+  
+    <div class="container">
+      
+      <br>
+
+      
+      <center>
+        <div class="row">
+          <img src="/assets/img/burger.png">
+        </div>
+      </center>
+
+      <center>
+        <h1 class="my_font">Eat Burger! </h1>
+      </center>
+      
+      <br>
+      
+      {{{body}}}
+
+
+      <br><br>
+
+      <form action="burger/create" method="POST"> 
+        
+       
+        <div class="row">
+          
+          <div class="col-md-3"></div> 
+
+         
+          <div class="form-group col-md-6">
+            <center><label for="new_burger" class="my_font">NEW BURGER!</label></center>
+            <textarea class="form-control" id="new_burger" name="burger_name"></textarea>
+          </div>
+
+        
+          <div class="col-md-3"></div> 
+        </div>
+      
+        
+        <center>
+          <button id="submit-button" type="submit" class="btn btn-primary">Order Burger</button>
+        </center>
+
+      </form>
+
+      <br>
+
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script> 
+
+  </body>
+</html>
