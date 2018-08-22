@@ -1,7 +1,7 @@
 
 <div class="row">
   
-   
+   <div class = "col-md-6 col-xs-12">
     
       <h4 class="my_font">Available to Eat Burgers!</h4>
       <div id="ready_to_eat">
@@ -10,21 +10,25 @@
         {{#each burgers}}
           {{#unless devoured}}
           <form action="burger/eat/{{id}}" method="POST">
-            
-              <li class="form-control">{{id}}. {{burger_name}}</li>
+            <div class="row">
+              <div class="col-xs-6">
+              <div class="form-control">{{id}}. {{burger_name}}</div>
+              </div>
+              <div class="col-xs-6">
                 <span class="input-group-btn"></span>
                   <button class="btn btn-primary devour-button" type="submit">Devour It!</button>
-                </span>
-            
+                  </div>
+                  </div>
           </form>
           {{/unless}}
         {{/each}}
 
       </div>
     </div>
+    
 
     
-    
+    <div class = "col-md-6 col-xs-12">
       <h4 class="my_font">Already eaten Burgers!</h4>
       <div id="already_eaten">
 
@@ -38,6 +42,7 @@
         {{/each}}
 
       </div>
+    </div>
     </div>
   
 </div>
